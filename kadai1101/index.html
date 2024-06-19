@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<css lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="q1">丸い矢印付きの見出し</h1>
+    <style>
+        h1.q1{
+            position: relative;
+            padding-left: 40px;
+        }
+        h1.q1::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-color: #66cc99;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1.q1::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid white;
+            border-top: 2px solid white;
+        }
+        body{
+            background-color:#fff;
+            color:#666;
+            font-family:"メイリオ",Meiryo,"MS Pゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hirogino Kaku
+            Gothic Pro",Osaka,sans-serif;
+        }
+        h1{
+            font-family:"M PLUS 1p",sans-seruf;
+            color:#333;
+            font-size:1.5rem;
+            line-height:1.25;
+        }
+    </style>
+</body>
+</html>
+
+
+
